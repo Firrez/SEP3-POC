@@ -5,4 +5,8 @@
         <RootNamespace>Tier1_Client</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Data" />
+    </ItemGroup>
+
 </Project>
