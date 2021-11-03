@@ -90,7 +90,7 @@ using Tier1_Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 28 "C:\Users\Bent\RiderProjects\SEP3-POC\Tier1-Client\Shared\NavMenu.razor"
+#line 18 "C:\Users\Bent\RiderProjects\SEP3-POC\Tier1-Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

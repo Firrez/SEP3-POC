@@ -4,16 +4,12 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Tier2_BusinessAPI.Models;
 
 namespace Tier2_BusinessAPI.Controllers
-{
-    [ApiController]
-    [Route("[controller]")]
-    public class UserController : ControllerBase
+{ 
+    public class UserController
     {
-        [HttpPost]
         public async Task AddUserAsync(User user)
         {
             using HttpClient client = new HttpClient();
@@ -26,8 +22,7 @@ namespace Tier2_BusinessAPI.Controllers
             HttpResponseMessage responseMessage =
                 await client.PostAsync("http://localhost:8080/user", content);
         }
-
-        [HttpGet]
+        
         public async Task<List<User>> GetUsersAsync()
         {
             using HttpClient client = new HttpClient();

@@ -82,6 +82,27 @@ using Tier1_Client.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Bent\RiderProjects\SEP3-POC\Tier1-Client\Pages\Index.razor"
+using Microsoft.AspNetCore.SignalR.Client;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Bent\RiderProjects\SEP3-POC\Tier1-Client\Pages\Index.razor"
+using Tier1_Client.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\Bent\RiderProjects\SEP3-POC\Tier1-Client\Pages\Index.razor"
+using System.Text.Json;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +111,55 @@ using Tier1_Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 37 "C:\Users\Bent\RiderProjects\SEP3-POC\Tier1-Client\Pages\Index.razor"
+      
+
+    private HubConnection _hubConnection;
+
+    public List<User> users { get; set; }
+    public string username { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _hubConnection = new HubConnectionBuilder()
+            .WithUrl(_navigationManager.ToAbsoluteUri("https://localhost:5001/userhub"))
+            .Build();
+
+        await _hubConnection.StartAsync();
+
+        await GetUsersAsync();
+    }
+
+    public async Task AddUser() //TEST PRIVATE AND PUBLIC
+    {
+        await _hubConnection.SendAsync("AddNewUserAsync", username);
+        await GetUsersAsync();
+    }
+
+    public async Task GetUsersAsync()
+    {
+        string respons = await _hubConnection.InvokeAsync<string>("GetUsersAsync");
+        users = JsonSerializer.Deserialize<List<User>>(respons);
+    }
+
+
+    private bool IsConnected =>
+        _hubConnection.State == HubConnectionState.Connected;
+
+    public async ValueTask DisposeAsync()
+    {
+        if (_hubConnection is not null)
+        {
+            await _hubConnection.DisposeAsync();
+        }
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager _navigationManager { get; set; }
     }
 }
 #pragma warning restore 1591
