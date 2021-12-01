@@ -2,10 +2,10 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "Microsoft.AspNetCore.Connections.Abstractions/5.0.11": {
+      "Microsoft.AspNetCore.Connections.Abstractions/5.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "5.0.11"
+          "Microsoft.AspNetCore.Http.Features": "5.0.12"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {}
@@ -40,7 +40,7 @@
           "lib/net5.0/Microsoft.AspNetCore.Http.Connections.Common.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Http.Features/5.0.11": {
+      "Microsoft.AspNetCore.Http.Features/5.0.12": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Primitives": "5.0.1",
@@ -66,11 +66,11 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll": {}
         }
       },
-      "Microsoft.AspNetCore.SignalR.Client.Core/5.0.11": {
+      "Microsoft.AspNetCore.SignalR.Client.Core/5.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "5.0.11",
-          "Microsoft.AspNetCore.SignalR.Protocols.Json": "5.0.11",
+          "Microsoft.AspNetCore.SignalR.Common": "5.0.12",
+          "Microsoft.AspNetCore.SignalR.Protocols.Json": "5.0.12",
           "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.Extensions.Logging": "5.0.0",
           "System.Threading.Channels": "5.0.0"
@@ -82,10 +82,10 @@
           "lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.dll": {}
         }
       },
-      "Microsoft.AspNetCore.SignalR.Common/5.0.11": {
+      "Microsoft.AspNetCore.SignalR.Common/5.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Connections.Abstractions": "5.0.11",
+          "Microsoft.AspNetCore.Connections.Abstractions": "5.0.12",
           "Microsoft.Extensions.Options": "5.0.0"
         },
         "compile": {
@@ -95,10 +95,10 @@
           "lib/net5.0/Microsoft.AspNetCore.SignalR.Common.dll": {}
         }
       },
-      "Microsoft.AspNetCore.SignalR.Protocols.Json/5.0.11": {
+      "Microsoft.AspNetCore.SignalR.Protocols.Json/5.0.12": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.SignalR.Common": "5.0.11"
+          "Microsoft.AspNetCore.SignalR.Common": "5.0.12"
         },
         "compile": {
           "lib/net5.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll": {}
@@ -195,10 +195,10 @@
     }
   },
   "libraries": {
-    "Microsoft.AspNetCore.Connections.Abstractions/5.0.11": {
-      "sha512": "1HHxtG4bPHaMM+l3/REVAwqUk0ntO/+DSlTs3iLfx+vKa42oyYdeEq37Bk5zpVCiONF2yBbL/24+Xo/CPD+zmQ==",
+    "Microsoft.AspNetCore.Connections.Abstractions/5.0.12": {
+      "sha512": "tbaz38nkGchpudDpXyAKAteVxzI5v8U2c+6j8Z1fcJP78SS6ZPHXtW7WaMhWUeOuTvCeB3uNf8Gmm8l8Ga3/RQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.connections.abstractions/5.0.11",
+      "path": "microsoft.aspnetcore.connections.abstractions/5.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -212,7 +212,7 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.AspNetCore.Connections.Abstractions.xml",
-        "microsoft.aspnetcore.connections.abstractions.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.connections.abstractions.5.0.12.nupkg.sha512",
         "microsoft.aspnetcore.connections.abstractions.nuspec"
       ]
     },
@@ -254,10 +254,10 @@
         "microsoft.aspnetcore.http.connections.common.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Http.Features/5.0.11": {
-      "sha512": "mE+xQE7nl91KjV3XffmZLN9aC4VwZWg/8inPvBXiZXlZhJrTb3uCqLmFRmzfmtAV3lS8n3Kd8yeKBKlyqqzcjw==",
+    "Microsoft.AspNetCore.Http.Features/5.0.12": {
+      "sha512": "ArNcbNfXGHVTHSIwkUmP8dLYqjMFB69DLmf6CYA/8+W/zGnJGRVmwE0VCUo7TepXuktOFBn846yt0NT0ZeOYWw==",
       "type": "package",
-      "path": "microsoft.aspnetcore.http.features/5.0.11",
+      "path": "microsoft.aspnetcore.http.features/5.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -269,7 +269,7 @@
         "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
-        "microsoft.aspnetcore.http.features.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.5.0.12.nupkg.sha512",
         "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
@@ -290,10 +290,10 @@
         "microsoft.aspnetcore.signalr.client.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Client.Core/5.0.11": {
-      "sha512": "y4EZgZvoPUC6x9v2PAhzQJa0CBx8ivSuEx6qLqQwQIB0hE818KUhyUGcnczk8PnAqgSCTduUUkNY2SCVwoiGgg==",
+    "Microsoft.AspNetCore.SignalR.Client.Core/5.0.12": {
+      "sha512": "dCssH2xUI6uWaKASxdDeC5/ZwR8/bHZLvF2CiSmNCb4b/WELRlssI4QJ3D5dzqoKeRS1dv9+hpWY+fsu3qbvUA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.client.core/5.0.11",
+      "path": "microsoft.aspnetcore.signalr.client.core/5.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -305,14 +305,14 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.xml",
         "lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.dll",
         "lib/netstandard2.1/Microsoft.AspNetCore.SignalR.Client.Core.xml",
-        "microsoft.aspnetcore.signalr.client.core.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.client.core.5.0.12.nupkg.sha512",
         "microsoft.aspnetcore.signalr.client.core.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Common/5.0.11": {
-      "sha512": "bkP8vN6DvzlyxwekP1U79cwBFvxbxn6C9WBBEfPa5AIDnyaXYvdF75JYwi+AOIsR+UjFHYbUXpShOR4Nual8tg==",
+    "Microsoft.AspNetCore.SignalR.Common/5.0.12": {
+      "sha512": "jh55ejvh3Ag7ioJeZj5V9M2KzJ0unzQpV0jT0mXl3mXOMNBof0j7h1vlpJ7quqFSS7RvcUi40sAESxmoiwVcVg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.common/5.0.11",
+      "path": "microsoft.aspnetcore.signalr.common/5.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -324,14 +324,14 @@
         "lib/net5.0/Microsoft.AspNetCore.SignalR.Common.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.xml",
-        "microsoft.aspnetcore.signalr.common.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.common.5.0.12.nupkg.sha512",
         "microsoft.aspnetcore.signalr.common.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.SignalR.Protocols.Json/5.0.11": {
-      "sha512": "P1pdwehL/21GAIJSxGm73gzJSIbO76zDbxv6jfU3kM7mw5321k/H/Zko6F5UWnjCBVuLKghwyEGhrpj8WVDkbg==",
+    "Microsoft.AspNetCore.SignalR.Protocols.Json/5.0.12": {
+      "sha512": "HEQ/X3Xg0nirlb7LaV7JLMPUcpLDHjNDCwgD7PHnPWVNlMH129UHwqFySQ5FH+NkBc/QBFyDpUUwOJp+evn5Qg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.signalr.protocols.json/5.0.11",
+      "path": "microsoft.aspnetcore.signalr.protocols.json/5.0.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -343,7 +343,7 @@
         "lib/net5.0/Microsoft.AspNetCore.SignalR.Protocols.Json.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.xml",
-        "microsoft.aspnetcore.signalr.protocols.json.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.signalr.protocols.json.5.0.12.nupkg.sha512",
         "microsoft.aspnetcore.signalr.protocols.json.nuspec"
       ]
     },
@@ -532,23 +532,24 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.AspNetCore.SignalR.Client >= 5.0.11"
+      "Microsoft.AspNetCore.SignalR.Client >= 5.0.11",
+      "Microsoft.AspNetCore.SignalR.Client.Core >= 5.0.12"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bent\\.nuget\\packages\\": {}
+    "C:\\Users\\zteph\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bent\\RiderProjects\\SEP3-POC\\Tier1-Client\\Tier1-Client.csproj",
+      "projectUniqueName": "C:\\Users\\zteph\\RiderProjects\\Playground\\SEP3-POC\\Tier1-Client\\Tier1-Client.csproj",
       "projectName": "Tier1-Client",
-      "projectPath": "C:\\Users\\Bent\\RiderProjects\\SEP3-POC\\Tier1-Client\\Tier1-Client.csproj",
-      "packagesPath": "C:\\Users\\Bent\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bent\\RiderProjects\\SEP3-POC\\Tier1-Client\\obj\\",
+      "projectPath": "C:\\Users\\zteph\\RiderProjects\\Playground\\SEP3-POC\\Tier1-Client\\Tier1-Client.csproj",
+      "packagesPath": "C:\\Users\\zteph\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zteph\\RiderProjects\\Playground\\SEP3-POC\\Tier1-Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bent\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\zteph\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -575,6 +576,10 @@
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
             "version": "[5.0.11, )"
+          },
+          "Microsoft.AspNetCore.SignalR.Client.Core": {
+            "target": "Package",
+            "version": "[5.0.12, )"
           }
         },
         "imports": [
@@ -595,7 +600,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
